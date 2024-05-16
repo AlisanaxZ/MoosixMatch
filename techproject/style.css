@@ -1,0 +1,183 @@
+@font-face {
+    src: url(fonts/iCielSoupofJustice.ttf);
+    font-family: Icielsoup;
+  }
+.font-1{
+    font-family: Icielsoup;
+}
+
+html {
+    height: 100%;
+    background: linear-gradient(to bottom, #fcb8d6, #c5b9fd);
+  }
+  
+  body {
+    margin: 0;
+    padding: 0;
+    
+  }
+
+  
+.header {
+    display: flex;
+    align-items: center;
+    font-family: sans-serif;
+    font-size: smaller;
+}
+ 
+.body {
+    
+}
+
+.cen {
+  position: absolute;
+  top: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  color: black;
+  text-align: center;
+  align-items: center;
+  font-family: sans-serif;
+  padding: 5px 10px;
+  font-size: 20px;
+  font-weight: bold;
+}
+
+.container {
+    width: 130px;
+    height: 30px;
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    font-family: sans-serif;
+    font-weight: bold;
+    color: #d695c6;
+    display: flex;
+    align-items: center;
+    background-color: #fff;
+    border-radius: 13px;
+    padding: 10px;
+  }
+
+  .logo2 {
+    width: 30px;
+    height: 30px;
+    margin-left: 10px;
+    margin-top: 0px;
+  }
+
+.logo1 {
+    width: 50px;
+    height: 50px;
+    margin-left: 20px;
+    margin-top: 10px;
+}
+  
+.title {
+    margin-top: 25px;
+    margin-left: 10px;
+    color: white;
+}
+
+.findmusic {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.bgi {
+  margin-top: -40px;
+  position: absolute;
+  align-items: center;
+  top: 0;
+  margin-left: auto;
+  width: 600px;
+  height: 600px;
+  background-image: url(images/cir1.png);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  z-index: -1;
+}
+
+.explayer {
+  position: relative;
+  margin-top: 125px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.exp4 {
+  margin-left: 100px;
+  margin-right: 100px;
+  width: 150px;
+  height: auto;
+}
+
+.exp2 {
+  width: 200px;
+  height: auto;
+}
+
+.exp1 {
+  margin-left: 50px;
+  margin-right: 50px;
+  width: 280px;
+  height: auto;
+}
+  .findmusic img {
+    transition: transform 0.3s ease;
+  }
+  
+  .findmusic img:hover {
+    transform: scale(1.1);
+  }
+  
+  .container2 {
+    height: 50px;
+    width: 300px;
+    align-items: center;
+    text-align: center;
+    font-family: sans-serif;
+    font-weight: bold;
+    color: black;
+    display: flex;
+    background-color: #fff;
+    border-radius: 40px;
+    padding: 10px;
+  }
+
+  .button {
+    height: 40px;
+    width: 340px;
+    position: absolute;
+    left: 50%;
+    margin-top: 75px;
+    transform: translate(-50%, -50%);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: white;
+    font-weight: bold;
+    font-family: sans-serif;
+    color: black;
+    padding: 10px 20px;
+    text-align: center;
+    text-decoration: none;
+    font-size: 20px;
+    border-radius: 27px;
+    transition-duration: 0.4s;
+    cursor: pointer;
+  }
+  
+  .button:hover {
+    background-color: black;
+    color: white;
+  }
+
+  
+  
+
+
