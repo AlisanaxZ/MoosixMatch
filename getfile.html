@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script src="https://unpkg.com/axios@1.6.7/dist/axios.min.js"></script>
+    <link rel="icon" type="image/x-icon" href="./assets/images/logo.png">
+    <title>Moosix Match</title>
+    <header>
+        <div class="header">  
+          <a href="home.html">
+            <img src="./assets/images/logo.png" alt="Logo" class="logo1">
+          </a>
+            <h1 class="title">MoosixMatch</h1>  
+        </div>
+    </header>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;500;600&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./assets/css/style2.css" />
+  </head>
+  <body>
+        <div class="title2">Tìm kiếm bài hát bạn muốn trong hơn <br> 20 triệu+ bài hát trên các nền tảng khác nhau</div>
+        <label for="file-upload" class="button2">
+                <span class="button-text">Gắn tệp đính kèm tại đây</span>
+        </label>
+        <div class="ortitle"> 
+          <a href="getlyrics.html">Hoặc tìm kiếm nhạc bằng lyrics</a>
+        </div>
+        <form id="uploadForm">
+          <input id="file-upload" type="file" name="file" accept=".mp3" style="display: none;">
+        </form>
+
+    <script src="./js/getfile.js"></script>
+  </body>   
+</html>
+

@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Upload file</title>
+    <script src="https://unpkg.com/axios@1.6.7/dist/axios.min.js"></script>
+</head>
+<body>
+    <h1>Upload file</h1>
+    <form id="uploadForm">
+        <input type="file" id="fileInput" name="file" accept=".mp3">
+        <button type="submit">Upload</button>
+    </form>
+
+    <div id="result">
+        <h2>Title: <span class="title"></span></h2>
+        <p>Artist: <span class="artist"></span></p> 
+        <img src="" alt="" class="artwork">
+
+        <p></p>
+
+        <span class="preview"></span>
+
+        <p></p>
+
+        <a href="" class="apple_music">Apple music</a>
+        <a href="" class="spotify">Spotify</a>
+        <a href="" class="more_platform">More Platform</a>
+    </div>
+    
+    <script>
+        let title = document.querySelector(".title");
+        let artist = document.querySelector(".artist");
+        let image = document.querySelector(".artwork");
+
+        let preview = document.querySelector(".preview");
+
+        let amLink = document.querySelector(".apple_music");
+        let spLink = document.querySelector(".spotify");
+        let moreLink = document.querySelector(".more_platform");
+
+        document.getElementById('uploadForm').addEventListener('submit', function(event) {
+            event.preventDefault(); 
+
+            let fileInput = document.getElementById('fileInput');
+            let file = fileInput.files[0];
+
+            let formData = new FormData();
+            formData.append('files', file);
+
+            axios.post('http://127.0.0.1:5000/upload', formData, {
+                headers: {
+                   'Content-Type': 'multipart/form-data',
+                   withCredentials: true
+                }
+            })
+            .then(function (response) {
+                music = response.data.result;
+                console.log(music);
+                
+                title.innerText = music.title;
+                artist.innerText = music.artist;
+
+                let artwork = music.apple_music.artwork.url;
+                artwork = artwork.replace('{w}', '1280') //height of artwork
+                artwork = artwork.replace('{h}', '768') //weight of artwork
+                image.src = artwork;
+
+                let audio_el = "<audio controls> <source src='" + music.apple_music.previews[0].url + "' class='preview' type='audio/mpeg'> Your browser does not support the audio element. </audio>";
+                preview.innerHTML = audio_el; 
+
+                amLink.href = music.apple_music.url;
+                spLink.href = music.spotify.external_urls.spotify;
+                moreLink.href = music.song_link;                
+            })
+            .catch(function (error) {
+                console.log(error);
+            });
+        });
+    </script>
+</body>
+</html>
