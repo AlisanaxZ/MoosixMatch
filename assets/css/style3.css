@@ -56,6 +56,7 @@ html {
 
 a:-webkit-any-link {
   color: inherit;
+  text-decoration: none;
 }
 
 html {
@@ -122,9 +123,11 @@ html {
 }
 
 .layer {
-  
+  display: flex;
+  align-items: center;
+  justify-content: center;
   margin-top: 50px;
-  margin-left: 50px;
+  margin-left: 100px;
   position: relative;
   top: 0;
   left: 0;
@@ -139,6 +142,7 @@ html {
 .ortitle {
   position: relative;
   display: flex;
+  text-decoration: underline;
   text-align: center;
   align-items: center;
   justify-content: center;
@@ -153,6 +157,7 @@ html {
 }
 
 .findmore {
+  margin-right: 150px;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -185,7 +190,7 @@ html {
 
 .vidtitle {
   font-size: 30px;
-  margin-top: 15px;
+  margin-top: 5px;
   color: white;
 }
 
@@ -225,11 +230,18 @@ html {
     background-color: black;
   }
 
-  @media (max-width: 900px) {
+  @media (max-width: 1000px) {
     .layer {
       transform: scale(0.6);
       margin-top: 50px;
+      margin-top: 0px;
+      margin-left: 0px;
     }
+
+    .findmore {
+      margin-right: 0px;
+    }
+
   } 
 
   @media (max-width: 1100px) {
@@ -261,17 +273,21 @@ html {
   }
   
   .button-with-image {
+    text-decoration: none;
     margin-top: 10px;
   }
   
   .button-with-image__button1 {
+    width: 250px;
+    height: 70px;
     display: flex;
     align-items: center;
     justify-content: center;
     background-color: white;
     font-weight: bold;
+    font-style: normal;
     color: black;
-    padding: 20px;
+    padding: 5px 30px;
     text-align: center;
     text-decoration: none;
     font-size: 20px;
@@ -283,13 +299,14 @@ html {
   }
   
   .button-with-image__button2 {
+    width: 250px;
+    height: 70px;
     display: flex;
     align-items: center;
     justify-content: center;
     background-color: white;
     font-weight: bold;
     color: black;
-    padding: 20px;
     text-align: center;
     text-decoration: none;
     font-size: 20px;
@@ -301,13 +318,14 @@ html {
   }
   
   .button-with-image__button3 {
+    width: 250px;
+    height: 70px;
     display: flex;
     align-items: center;
     justify-content: center;
     background-color: white;
     font-weight: bold;
     color: black;
-    padding: 20px;
     text-align: center;
     text-decoration: none;
     font-size: 20px;
@@ -334,7 +352,7 @@ html {
   }
   
   .button-with-image__button1 img {
-    width: 80px;
+    width: 70px;
     height: 20px;
     margin-left: 10px;
     margin-bottom: 4px;
@@ -455,7 +473,7 @@ html {
   }
 
   .main2 {
-    margin-top: 200px;
+    margin-top: 50px;
     display: flex;
     flex-direction: column;
     align-items: center;
