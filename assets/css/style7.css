@@ -1,0 +1,325 @@
+@font-face {
+    font-family: 'SVN-Product Sans';
+    src: url('../fonts/SVN-ProductSansBoldItalic.eot');
+    src: url('../fonts/SVN-ProductSansBoldItalic.eot?#iefix') format('embedded-opentype'),
+        url('../fonts/SVN-ProductSansBoldItalic.woff2') format('woff2'),
+        url('../fonts/SVN-ProductSansBoldItalic.woff') format('woff'),
+        url('../fonts/SVN-ProductSansBoldItalic.ttf') format('truetype'),
+        url('../fonts/SVN-ProductSansBoldItalic.svg#SVN-ProductSansBoldItalic') format('svg');
+    font-weight: bold;
+    font-style: italic;
+    font-display: swap;
+  }
+  
+  @font-face {
+    font-family: 'SVN-Product Sans';
+    src: url('../fonts/SVN-ProductSans.eot');
+    src: url('../fonts/SVN-ProductSans.eot?#iefix') format('embedded-opentype'),
+        url('../fonts/SVN-ProductSans.woff2') format('woff2'),
+        url('../fonts/SVN-ProductSans.woff') format('woff'),
+        url('../fonts/SVN-ProductSans.ttf') format('truetype'),
+        url('../fonts/SVN-ProductSans.svg#SVN-ProductSans') format('svg');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+  }
+  
+  @font-face {
+    font-family: 'SVN-Product Sans';
+    src: url('../fonts/SVN-ProductSansBold.eot');
+    src: url('../fonts/SVN-ProductSansBold.eot?#iefix') format('embedded-opentype'),
+        url('../fonts/SVN-ProductSansBold.woff2') format('woff2'),
+        url('../fonts/SVN-ProductSansBold.woff') format('woff'),
+        url('../fonts/SVN-ProductSansBold.ttf') format('truetype'),
+        url('../fonts/SVN-ProductSansBold.svg#SVN-ProductSansBold') format('svg');
+    font-weight: bold;
+    font-style: normal;
+    font-display: swap;
+  }
+  
+  @font-face {
+    font-family: 'SVN-Product Sans';
+    src: url('../fonts/SVN-ProductSansItalic.eot');
+    src: url('../fonts/SVN-ProductSansItalic.eot?#iefix') format('embedded-opentype'),
+        url('../fonts/SVN-ProductSansItalic.woff2') format('woff2'),
+        url('../fonts/SVN-ProductSansItalic.woff') format('woff'),
+        url('../fonts/SVN-ProductSansItalic.ttf') format('truetype'),
+        url('../fonts/SVN-ProductSansItalic.svg#SVN-ProductSansItalic') format('svg');
+    font-weight: normal;
+    font-style: italic;
+    font-display: swap;
+  }
+  
+  html {
+    font-family: 'SVN-Product Sans';
+  }
+  
+  a:-webkit-any-link {
+    color: white;
+  }
+
+  html {
+      height: 100%;
+      background-image: url('../images/bg2.png');
+      background-position: center;
+      background-repeat: no-repeat;
+      background-size: cover;
+      z-index: -1;
+    }
+    
+    body {
+      margin: 0;
+      padding: 0;
+      
+    }
+  
+    .header {
+      display: flex;
+      align-items: center;
+      
+      font-size: smaller;
+  }
+  
+  .container {
+      width: 130px;
+      height: 30px;
+      position: absolute;
+      top: 20px;
+      right: 20px;
+      
+      font-weight: bold;
+      color: #d695c6;
+      display: flex;
+      align-items: center;
+      background-color: #fff;
+      border-radius: 13px;
+      padding: 10px;
+    }
+  
+  
+    .logo2 {
+      width: 30px;
+      height: 30px;
+      margin-left: 10px;
+      margin-top: 0px;
+    }
+  
+  .logo1 {
+      width: 50px;
+      height: 50px;
+      margin-left: 20px;
+      margin-top: 10px;
+  }
+    
+  .title {
+      margin-top: 25px;
+      margin-left: 10px;
+      color: white;
+  }
+  
+  .title2 {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 50vh;
+      color: white;
+      font-size: 40px;
+      
+      font-weight: bold;
+      white-space: pre-line;
+      text-align: center;
+      align-items: center;
+  }
+  
+  .button2 {
+      height: 60px;
+      width: 340px;
+      position: relative;
+      left: 50%;
+      margin-top: 75px;
+      transform: translateX(-50%);
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      background-color: white;
+      font-weight: bold;
+      
+      color: black;
+      padding: 10px 20px;
+      text-align: center;
+      text-decoration: none;
+      font-size: 20px;
+      border: none;
+      border-radius: 34px;
+      transition-duration: 0.4s;
+      cursor: pointer;
+      overflow: hidden;
+    }
+    
+    .button2::before {
+      content: "";
+      position: absolute;
+      top: 0;
+      left: -100%;
+      width: 100%;
+      height: 100%;
+      background-color: rgba(0, 0, 0, 0.2);
+      transition: left 0.4s;
+      z-index: -1;
+    }
+    
+    .button2:hover {
+      color: white;
+      background-color: black;
+    }
+    
+    #file-upload {
+      display: none;
+    }
+  
+    .title2 {
+      margin-left: 200px;
+      margin-right: 200px;
+      display: flex;
+      margin-top: 50px;
+      justify-content: center;
+      align-items: center;
+      height: 50vh;
+      color: white;
+      font-size: 40px;
+      font-family: sans-serif;
+      font-weight: bold;
+      white-space: pre-line;
+      text-align: center;
+      align-items: center;
+  }
+  
+    .ortitle {
+      position: relative;
+      display: flex;
+      text-align: center;
+      align-items: center;
+      justify-content: center;
+      margin-top: 400px;
+      font-size: 20px;
+      color: white;
+    }
+  
+    .ortitle {
+      position: relative;
+      display: flex;
+      text-align: center;
+      align-items: center;
+      justify-content: center;
+      margin-top: 130px;
+      font-size: 20px;
+      color: white;
+    }
+
+    .input__container {
+        margin-top: 150px;
+        position: absolute;
+        background: rgba(255, 255, 255, 0.664);
+        padding: 10px 20px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 5px;
+        border-radius: 22px;
+        max-width: 1000px;
+        width: 1000px;
+        transition: transform 400ms;
+        transform-style: preserve-3d;
+        transform: rotateX(15deg) rotateY(-20deg);
+        perspective: 1000px;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+      }
+      
+      .title2 {
+        display: flex;
+        margin-top: 20px;
+        margin-left: 200px;
+        margin-right: 200px;
+        justify-content: center;
+        align-items: center;
+        height: 50vh;
+        color: white;
+        font-size: 40px;
+        font-family: sans-serif;
+        font-weight: bold;
+        white-space: pre-line;
+        text-align: center;
+        align-items: center;
+    }
+
+    @media (max-width: 700px) {
+        .title2 {
+          font-size: 27px;
+        }
+    
+        .button2 {
+          height: 30px;
+          width: 170px;
+          font-size: smaller;
+        }
+      }
+
+      @media (max-width: 1100px) {
+        .input__container {
+          padding: 5px 10px;
+          width: 50%;
+          height: 10%;
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          transform: translate(-50%, -50%);
+        }
+      }
+      .shadow__input {
+        content: "";
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        left: 0;
+        bottom: 0;
+        z-index: -1;
+        filter: blur(30px);
+        border-radius: 20px;
+        background-color: #999cff;
+        background-image: radial-gradient(at 85% 51%, hsla(60,60%,61%,1) 0px, transparent 50%),
+          radial-gradient(at 74% 68%, hsla(235,69%,77%,1) 0px, transparent 50%),
+          radial-gradient(at 64% 79%, hsla(284,72%,73%,1) 0px, transparent 50%),
+          radial-gradient(at 75% 16%, hsla(283,60%,72%,1) 0px, transparent 50%),
+          radial-gradient(at 90% 65%, hsla(153,70%,64%,1) 0px, transparent 50%),
+          radial-gradient(at 91% 83%, hsla(283,74%,69%,1) 0px, transparent 50%),
+          radial-gradient(at 72% 91%, hsla(213,75%,75%,1) 0px, transparent 50%);
+      }
+      
+      .input__button__shadow {
+        cursor: pointer;
+        border: none;
+        background: none;
+        transition: transform 400ms, background 400ms;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        border-radius: 12px;
+        padding: 5px;
+      }
+      
+      .input__button__shadow:hover {
+        background: rgba(255, 255, 255, 0.411);
+      }
+      
+      .input__search {
+        width: 100%;
+        border-radius: 20px;
+        outline: none;
+        border: none;
+        padding: 20px;
+        font-size: 18px;
+        position: relative;
+        font-family: 'SVN-Product Sans';
+      }
